@@ -8,14 +8,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-app: myd
+      app: myd
   template:
     metadata:
-creationTimestamp: null
-labels:
-app: myd
+      labels:
+        app: myd
     spec:
-containers:
-- image: ayush122001/test
-name: test
-~                   
+      containers:
+      - image: ayush122001/test
+        name: test
